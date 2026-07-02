@@ -9,6 +9,19 @@ rp_has_rewardable_merit_trigger = {
 	var:rp_merit_score >= 30
 }
 
+rp_can_request_merit_reward_trigger = {
+	rp_has_rewardable_merit_trigger = yes
+	OR = {
+		NOR = {
+			is_powerful_vassal = yes
+			has_trait = ambitious
+			has_trait = greedy
+			has_trait = arrogant
+		}
+		var:rp_merit_score >= 60
+	}
+}
+
 rp_is_valid_merit_subject_trigger = {
 	is_alive = yes
 	has_variable = rp_merit_score
@@ -40,19 +53,27 @@ rp_has_rewardable_merit_subject_trigger = {
 	OR = {
 		any_vassal_or_below = {
 			rp_is_valid_merit_subject_trigger = { LIEGE = root }
-			rp_has_rewardable_merit_trigger = yes
+			rp_can_request_merit_reward_trigger = yes
 			NOT = { has_character_flag = rp_petition_recently_handled }
 		}
 		any_courtier_or_guest = {
 			rp_is_valid_merit_subject_trigger = { LIEGE = root }
-			rp_has_rewardable_merit_trigger = yes
+			rp_can_request_merit_reward_trigger = yes
 			NOT = { has_character_flag = rp_petition_recently_handled }
 		}
 		any_knight = {
 			rp_is_valid_merit_subject_trigger = { LIEGE = root }
-			rp_has_rewardable_merit_trigger = yes
+			rp_can_request_merit_reward_trigger = yes
 			NOT = { has_character_flag = rp_petition_recently_handled }
 		}
+	}
+}
+
+rp_has_grantable_barony_trigger = {
+	any_held_title = {
+		tier = tier_barony
+		is_landless_type_title = no
+		NOT = { this = root.primary_title }
 	}
 }
 
@@ -68,6 +89,49 @@ rp_has_grantable_county_trigger = {
 rp_has_grantable_duchy_trigger = {
 	any_held_title = {
 		tier = tier_duchy
+		is_landless_type_title = no
+		NOT = { this = root.primary_title }
+	}
+}
+
+rp_has_grantable_multiple_duchies_trigger = {
+	any_held_title = {
+		count >= 2
+		tier = tier_duchy
+		is_landless_type_title = no
+		NOT = { this = root.primary_title }
+	}
+}
+
+rp_has_grantable_kingdom_trigger = {
+	any_held_title = {
+		tier = tier_kingdom
+		is_landless_type_title = no
+		NOT = { this = root.primary_title }
+	}
+}
+
+rp_has_grantable_multiple_kingdoms_trigger = {
+	any_held_title = {
+		count >= 2
+		tier = tier_kingdom
+		is_landless_type_title = no
+		NOT = { this = root.primary_title }
+	}
+}
+
+rp_has_grantable_empire_trigger = {
+	any_held_title = {
+		tier = tier_empire
+		is_landless_type_title = no
+		NOT = { this = root.primary_title }
+	}
+}
+
+rp_has_grantable_multiple_empires_trigger = {
+	any_held_title = {
+		count >= 2
+		tier = tier_empire
 		is_landless_type_title = no
 		NOT = { this = root.primary_title }
 	}
@@ -89,6 +153,26 @@ rp_can_fire_campaign_incident_trigger = {
 	rp_is_merit_system_enabled_trigger = yes
 	is_at_war = yes
 	NOT = { has_character_flag = rp_campaign_incident_cooldown }
+	OR = {
+		any_vassal_or_below = {
+			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+			has_character_flag = rp_war_service_participant
+		}
+		any_courtier_or_guest = {
+			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+			has_character_flag = rp_war_service_participant
+		}
+		any_knight = {
+			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+			has_character_flag = rp_war_service_participant
+		}
+	}
+}
+
+rp_can_fire_minor_campaign_incident_trigger = {
+	rp_is_merit_system_enabled_trigger = yes
+	is_at_war = yes
+	NOT = { has_character_flag = rp_minor_campaign_incident_cooldown }
 	OR = {
 		any_vassal_or_below = {
 			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }

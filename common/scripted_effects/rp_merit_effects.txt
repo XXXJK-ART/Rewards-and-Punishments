@@ -130,6 +130,12 @@ rp_check_major_battle_petition_effect = {
 		limit = {
 			rp_has_rewardable_merit_trigger = yes
 			NOT = { has_character_flag = rp_petition_recently_handled }
+			NOR = {
+				is_powerful_vassal = yes
+				has_trait = ambitious
+				has_trait = greedy
+				has_trait = arrogant
+			}
 			exists = $LIEGE$
 			$LIEGE$ = {
 				rp_is_merit_system_enabled_trigger = yes
@@ -215,7 +221,7 @@ rp_select_petitioner_effect = {
 	ordered_in_list = {
 		list = rp_merit_candidates
 		limit = {
-			rp_has_rewardable_merit_trigger = yes
+			rp_can_request_merit_reward_trigger = yes
 			NOT = { has_character_flag = rp_petition_recently_handled }
 		}
 		order_by = { value = var:rp_merit_score }

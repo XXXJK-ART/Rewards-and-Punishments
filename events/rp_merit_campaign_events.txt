@@ -245,6 +245,60 @@ rp_merit.2000 = {
 				}
 			}
 		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 7
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2100
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 6
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2101
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 6
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2102
+				}
+			}
+		}
 	}
 }
 
@@ -347,6 +401,60 @@ rp_merit.2001 = {
 				scope:rp_merit_liege = {
 					rp_mark_campaign_incident_cooldown_effect = { DAYS = 180 }
 					trigger_event = rp_merit.2090
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 7
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2103
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 6
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2104
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = scope:rp_merit_liege
+				exists = scope:rp_campaign_actor
+				scope:rp_merit_liege = { rp_can_fire_minor_campaign_incident_trigger = yes }
+			}
+			random = {
+				chance = 6
+				scope:rp_merit_liege = {
+					add_character_flag = {
+						flag = rp_minor_campaign_incident_cooldown
+						days = 45
+					}
+					trigger_event = rp_merit.2105
 				}
 			}
 		}
@@ -1207,6 +1315,252 @@ rp_merit.2095 = {
 		add_prestige = 50
 		scope:rp_campaign_actor = {
 			rp_add_merit_effect = { LIEGE = root VALUE = 8 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2100 = {
+	type = character_event
+	title = rp_merit.2100.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2100.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = { exists = scope:rp_campaign_actor }
+
+	option = {
+		name = rp_merit.2100.a
+		add_character_modifier = {
+			modifier = rp_campaign_discipline_modifier
+			years = 1
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 5 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2100.b
+		add_dread = 3
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -3 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2101 = {
+	type = character_event
+	title = rp_merit.2101.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2101.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = { exists = scope:rp_campaign_actor }
+
+	option = {
+		name = rp_merit.2101.a
+		add_prestige = 20
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 4 }
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2101.b
+		add_prestige = -10
+		add_character_modifier = {
+			modifier = rp_campaign_disorder_modifier
+			years = 1
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 2 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2102 = {
+	type = character_event
+	title = rp_merit.2102.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2102.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = { exists = scope:rp_campaign_actor }
+
+	option = {
+		name = rp_merit.2102.a
+		trigger = { gold >= 15 }
+		remove_short_term_gold = 15
+		scope:rp_campaign_actor = {
+			add_gold = 15
+			rp_add_merit_effect = { LIEGE = root VALUE = 6 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2102.b
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 3 }
+		}
+		add_prestige = 10
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2102.c
+		add_dread = 3
+		scope:rp_campaign_actor = {
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2103 = {
+	type = character_event
+	title = rp_merit.2103.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2103.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = { exists = scope:rp_campaign_actor }
+
+	option = {
+		name = rp_merit.2103.a
+		add_prestige = 15
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 6 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2103.b
+		add_dread = 3
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -5 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_rebuked_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2104 = {
+	type = character_event
+	title = rp_merit.2104.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2104.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = { exists = scope:rp_campaign_actor }
+
+	option = {
+		name = rp_merit.2104.a
+		trigger = { gold >= 10 }
+		remove_short_term_gold = 10
+		add_character_modifier = {
+			modifier = rp_campaign_discipline_modifier
+			years = 1
+		}
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 4 }
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2104.b
+		add_dread = 5
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = -4 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_risk_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+}
+
+rp_merit.2105 = {
+	type = character_event
+	title = rp_merit.2105.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.2105.desc
+	right_portrait = scope:rp_campaign_actor
+
+	trigger = { exists = scope:rp_campaign_actor }
+
+	option = {
+		name = rp_merit.2105.a
+		add_prestige = 15
+		scope:rp_campaign_actor = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 7 }
+			add_opinion = {
+				target = root
+				modifier = rp_campaign_incident_grateful_opinion
+			}
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2105.b
+		trigger = { gold >= 20 }
+		remove_short_term_gold = 20
+		scope:rp_campaign_actor = {
+			add_gold = 20
+			rp_add_merit_effect = { LIEGE = root VALUE = 4 }
+		}
+		rp_mark_campaign_actor_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.2105.c
+		add_dread = 3
+		scope:rp_campaign_actor = {
 			add_opinion = {
 				target = root
 				modifier = rp_campaign_incident_risk_opinion

@@ -437,51 +437,61 @@ rp_merit.0201 = {
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
@@ -616,101 +626,121 @@ rp_merit.0202 = {
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
@@ -845,151 +875,181 @@ rp_merit.0203 = {
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
@@ -1124,201 +1184,241 @@ rp_merit.0204 = {
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
@@ -1453,251 +1553,301 @@ rp_merit.0205 = {
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
@@ -1832,301 +1982,361 @@ rp_merit.0206 = {
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
@@ -2261,351 +2471,421 @@ rp_merit.0207 = {
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
@@ -2740,401 +3020,481 @@ rp_merit.0208 = {
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
@@ -3269,451 +3629,541 @@ rp_merit.0209 = {
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
 			list = rp_merit_candidates
 			order_by = { value = var:rp_merit_score }
+			save_scope_as = rp_roster_skip
 			remove_from_list = rp_merit_candidates
 		}
 		ordered_in_list = {
@@ -4076,7 +4526,7 @@ rp_merit.1000 = {
 		name = rp_merit.1000.b
 		trigger = {
 			scope:rp_petitioner = {
-				var:rp_merit_score >= 50
+				var:rp_merit_score >= 30
 				NOT = { has_trait = rp_merit_honor_1 }
 			}
 		}
@@ -4090,7 +4540,208 @@ rp_merit.1000 = {
 				target = root
 				modifier = rp_merit_reward_honor_opinion
 			}
-			rp_consume_merit_effect = { VALUE = 50 }
+			rp_consume_merit_effect = { VALUE = 30 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.s
+		trigger = {
+			scope:rp_petitioner = { var:rp_merit_score >= 200 }
+			rp_has_grantable_multiple_empires_trigger = yes
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_empire
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+			}
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_empire
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+			}
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 200 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.r
+		trigger = {
+			scope:rp_petitioner = { var:rp_merit_score >= 180 }
+			rp_has_grantable_empire_trigger = yes
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_empire
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+			}
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 180 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.q
+		trigger = {
+			scope:rp_petitioner = { var:rp_merit_score >= 150 }
+			rp_has_grantable_multiple_kingdoms_trigger = yes
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_kingdom
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+			}
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_kingdom
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+			}
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 150 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.p
+		trigger = {
+			scope:rp_petitioner = { var:rp_merit_score >= 120 }
+			rp_has_grantable_kingdom_trigger = yes
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_kingdom
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+			}
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 120 }
+		}
+		rp_mark_petition_handled_effect = yes
+	}
+
+	option = {
+		name = rp_merit.1000.o
+		trigger = {
+			scope:rp_petitioner = { var:rp_merit_score >= 90 }
+			rp_has_grantable_multiple_duchies_trigger = yes
+		}
+		create_title_and_vassal_change = {
+			type = granted
+			save_scope_as = rp_title_change
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_duchy
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+			}
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_duchy
+				is_landless_type_title = no
+				NOT = { this = root.primary_title }
+			}
+			change_title_holder = {
+				holder = scope:rp_petitioner
+				change = scope:rp_title_change
+				take_baronies = no
+			}
+		}
+		resolve_title_and_vassal_change = scope:rp_title_change
+		scope:rp_petitioner = {
+			add_opinion = {
+				target = root
+				modifier = rp_merit_reward_land_opinion
+			}
+			rp_consume_merit_effect = { VALUE = 90 }
 		}
 		rp_mark_petition_handled_effect = yes
 	}
@@ -4098,7 +4749,7 @@ rp_merit.1000 = {
 	option = {
 		name = rp_merit.1000.g
 		trigger = {
-			scope:rp_petitioner = { var:rp_merit_score >= 100 }
+			scope:rp_petitioner = { var:rp_merit_score >= 60 }
 			rp_has_grantable_duchy_trigger = yes
 		}
 		create_title_and_vassal_change = {
@@ -4123,7 +4774,7 @@ rp_merit.1000 = {
 				target = root
 				modifier = rp_merit_reward_land_opinion
 			}
-			rp_consume_merit_effect = { VALUE = 100 }
+			rp_consume_merit_effect = { VALUE = 60 }
 		}
 		rp_mark_petition_handled_effect = yes
 	}
@@ -4131,7 +4782,7 @@ rp_merit.1000 = {
 	option = {
 		name = rp_merit.1000.h
 		trigger = {
-			scope:rp_petitioner = { var:rp_merit_score >= 100 }
+			scope:rp_petitioner = { var:rp_merit_score >= 60 }
 			rp_has_creatable_duchy_from_county_trigger = yes
 		}
 		remove_short_term_gold = 250
@@ -4162,7 +4813,7 @@ rp_merit.1000 = {
 				target = root
 				modifier = rp_merit_reward_land_opinion
 			}
-			rp_consume_merit_effect = { VALUE = 100 }
+			rp_consume_merit_effect = { VALUE = 60 }
 		}
 		rp_mark_petition_handled_effect = yes
 	}
@@ -4170,8 +4821,8 @@ rp_merit.1000 = {
 	option = {
 		name = rp_merit.1000.c
 		trigger = {
-			scope:rp_petitioner = { var:rp_merit_score >= 80 }
-			rp_has_grantable_county_trigger = yes
+			scope:rp_petitioner = { var:rp_merit_score >= 30 }
+			rp_has_grantable_barony_trigger = yes
 		}
 		create_title_and_vassal_change = {
 			type = granted
@@ -4179,9 +4830,8 @@ rp_merit.1000 = {
 		}
 		random_held_title = {
 			limit = {
-				tier = tier_county
+				tier = tier_barony
 				is_landless_type_title = no
-				NOT = { this = root.capital_county }
 				NOT = { this = root.primary_title }
 			}
 			change_title_holder = {
@@ -4196,7 +4846,7 @@ rp_merit.1000 = {
 				target = root
 				modifier = rp_merit_reward_land_opinion
 			}
-			rp_consume_merit_effect = { VALUE = 80 }
+			rp_consume_merit_effect = { VALUE = 30 }
 		}
 		rp_mark_petition_handled_effect = yes
 	}
