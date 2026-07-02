@@ -1,0 +1,23 @@
+﻿rp_merit_roster_decision = {
+	decision_group_type = rp_merit
+
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/tgp_decision_mandala.dds"
+	}
+	desc = rp_merit_roster_decision_desc
+	selection_tooltip = rp_merit_roster_decision_tooltip
+
+	is_shown = {
+		rp_is_merit_system_enabled_trigger = yes
+	}
+
+	is_valid = {
+		always = yes
+	}
+
+	effect = {
+		trigger_event = rp_merit.0200
+	}
+
+	ai_check_interval = 0
+}

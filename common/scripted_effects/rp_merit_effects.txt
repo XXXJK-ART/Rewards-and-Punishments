@@ -1,0 +1,417 @@
+﻿rp_add_merit_effect = {
+	save_scope_as = rp_merit_recipient
+
+	if = {
+		limit = { exists = $LIEGE$ }
+		set_variable = {
+			name = rp_merit_owner
+			value = $LIEGE$
+		}
+		$LIEGE$ = {
+			if = {
+				limit = {
+					NOT = {
+						is_target_in_variable_list = {
+							name = rp_merit_roster
+							target = scope:rp_merit_recipient
+						}
+					}
+				}
+				add_to_variable_list = {
+					name = rp_merit_roster
+					target = scope:rp_merit_recipient
+				}
+			}
+		}
+	}
+
+	if = {
+		limit = { NOT = { has_variable = rp_merit_score } }
+		set_variable = {
+			name = rp_merit_score
+			value = 0
+		}
+	}
+	change_variable = {
+		name = rp_merit_score
+		add = $VALUE$
+	}
+	if = {
+		limit = { var:rp_merit_score > 200 }
+		set_variable = {
+			name = rp_merit_score
+			value = 200
+		}
+	}
+	if = {
+		limit = { var:rp_merit_score < -100 }
+		set_variable = {
+			name = rp_merit_score
+			value = -100
+		}
+	}
+}
+
+rp_consume_merit_effect = {
+	if = {
+		limit = { NOT = { has_variable = rp_merit_score } }
+		set_variable = {
+			name = rp_merit_score
+			value = 0
+		}
+	}
+	change_variable = {
+		name = rp_merit_score
+		add = -$VALUE$
+	}
+	if = {
+		limit = { var:rp_merit_score < 0 }
+		set_variable = {
+			name = rp_merit_score
+			value = 0
+		}
+	}
+}
+
+rp_clear_merit_effect = {
+	remove_variable = rp_merit_score
+	remove_variable = rp_merit_battles
+	remove_variable = rp_merit_sieges
+	remove_variable = rp_merit_captures
+	remove_variable = rp_merit_recent_major_gain
+	remove_variable = rp_merit_recent_major_loss
+	remove_variable = rp_merit_owner
+	remove_character_flag = rp_pending_petition
+	remove_character_flag = rp_resentful_mark
+	remove_character_flag = rp_petition_recently_handled
+	remove_character_flag = rp_recent_battle_merit_credit
+	remove_character_flag = rp_war_service_participant
+	remove_character_modifier = rp_merit_resentful_modifier
+}
+
+rp_record_battle_stat_effect = {
+	if = {
+		limit = { NOT = { has_variable = rp_merit_battles } }
+		set_variable = { name = rp_merit_battles value = 0 }
+	}
+	change_variable = { name = rp_merit_battles add = 1 }
+	add_character_flag = {
+		flag = rp_recent_battle_merit_credit
+		days = 365
+	}
+}
+
+rp_mark_war_service_participant_effect = {
+	add_character_flag = {
+		flag = rp_war_service_participant
+		days = 730
+	}
+}
+
+rp_record_siege_stat_effect = {
+	if = {
+		limit = { NOT = { has_variable = rp_merit_sieges } }
+		set_variable = { name = rp_merit_sieges value = 0 }
+	}
+	change_variable = { name = rp_merit_sieges add = 1 }
+}
+
+rp_record_capture_stat_effect = {
+	if = {
+		limit = { NOT = { has_variable = rp_merit_captures } }
+		set_variable = { name = rp_merit_captures value = 0 }
+	}
+	change_variable = { name = rp_merit_captures add = 1 }
+}
+
+rp_check_major_battle_petition_effect = {
+	save_scope_as = rp_major_battle_petitioner
+	if = {
+		limit = {
+			rp_has_rewardable_merit_trigger = yes
+			NOT = { has_character_flag = rp_petition_recently_handled }
+			exists = $LIEGE$
+			$LIEGE$ = {
+				rp_is_merit_system_enabled_trigger = yes
+				NOT = { has_character_flag = rp_major_battle_petition_recently_checked }
+			}
+		}
+		set_variable = { name = rp_merit_recent_major_gain value = $VALUE$ }
+		$LIEGE$ = {
+			add_character_flag = {
+				flag = rp_major_battle_petition_recently_checked
+				days = 30
+			}
+			trigger_event = {
+				id = rp_merit.1000
+				days = 1
+			}
+		}
+	}
+}
+
+rp_check_major_penalty_effect = {
+	save_scope_as = rp_penalty_target
+	if = {
+		limit = {
+			exists = $LIEGE$
+			$LIEGE$ = {
+				rp_is_merit_system_enabled_trigger = yes
+				NOT = { has_character_flag = rp_major_penalty_recently_checked }
+			}
+		}
+		set_variable = { name = rp_merit_recent_major_loss value = $VALUE$ }
+		$LIEGE$ = {
+			add_character_flag = {
+				flag = rp_major_penalty_recently_checked
+				days = 30
+			}
+			trigger_event = {
+				id = rp_merit.1200
+				days = 1
+			}
+		}
+	}
+}
+
+rp_collect_merit_candidates_effect = {
+	if = {
+		limit = { has_variable_list = rp_merit_roster }
+#tiger-ignore(block, key=strict-scopes)
+		every_in_list = {
+			list = rp_merit_roster
+			limit = {
+				rp_is_valid_merit_subject_trigger = { LIEGE = root }
+				NOT = { is_in_list = rp_merit_candidates }
+			}
+			add_to_list = rp_merit_candidates
+		}
+	}
+	every_vassal_or_below = {
+		limit = {
+			rp_is_valid_merit_subject_trigger = { LIEGE = root }
+			NOT = { is_in_list = rp_merit_candidates }
+		}
+		add_to_list = rp_merit_candidates
+	}
+	every_courtier_or_guest = {
+		limit = {
+			rp_is_valid_merit_subject_trigger = { LIEGE = root }
+			NOT = { is_in_list = rp_merit_candidates }
+		}
+		add_to_list = rp_merit_candidates
+	}
+	every_knight = {
+		limit = {
+			rp_is_valid_merit_subject_trigger = { LIEGE = root }
+			NOT = { is_in_list = rp_merit_candidates }
+		}
+		add_to_list = rp_merit_candidates
+	}
+}
+
+rp_select_petitioner_effect = {
+	rp_collect_merit_candidates_effect = yes
+	ordered_in_list = {
+		list = rp_merit_candidates
+		limit = {
+			rp_has_rewardable_merit_trigger = yes
+			NOT = { has_character_flag = rp_petition_recently_handled }
+		}
+		order_by = { value = var:rp_merit_score }
+		save_scope_as = rp_petitioner
+	}
+}
+
+rp_set_petition_gold_amount_effect = {
+	set_variable = { name = rp_petition_gold_amount value = 75 }
+	set_variable = {
+		name = rp_petition_gold_cap
+		value = gold
+	}
+	change_variable = {
+		name = rp_petition_gold_cap
+		multiply = 0.2
+	}
+	if = {
+		limit = { highest_held_title_tier >= tier_kingdom }
+		set_variable = { name = rp_petition_gold_amount value = 150 }
+	}
+	if = {
+		limit = { highest_held_title_tier >= tier_empire }
+		set_variable = { name = rp_petition_gold_amount value = 250 }
+	}
+	if = {
+		limit = { var:rp_petition_gold_amount > var:rp_petition_gold_cap }
+		set_variable = {
+			name = rp_petition_gold_amount
+			value = var:rp_petition_gold_cap
+		}
+	}
+}
+
+rp_mark_petition_handled_effect = {
+	scope:rp_petitioner = {
+		remove_character_flag = rp_pending_petition
+		add_character_flag = {
+			flag = rp_petition_recently_handled
+			days = 365
+		}
+	}
+	change_variable = {
+		name = rp_petition_chain_count
+		add = 1
+	}
+	if = {
+		limit = {
+			var:rp_petition_chain_count < 3
+			rp_has_rewardable_merit_subject_trigger = yes
+		}
+		trigger_event = {
+			id = rp_merit.1000
+			days = 1
+		}
+	}
+	else = {
+		remove_variable = rp_petition_chain_count
+	}
+}
+
+rp_war_end_service_merit_effect = {
+	every_vassal_or_below = {
+		limit = {
+			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+			has_character_flag = rp_war_service_participant
+		}
+		rp_add_merit_effect = { LIEGE = root VALUE = 2 }
+		remove_character_flag = rp_war_service_participant
+	}
+	every_courtier_or_guest = {
+		limit = {
+			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+			has_character_flag = rp_war_service_participant
+		}
+		rp_add_merit_effect = { LIEGE = root VALUE = 2 }
+		remove_character_flag = rp_war_service_participant
+	}
+	every_knight = {
+		limit = {
+			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+			has_character_flag = rp_war_service_participant
+		}
+		rp_add_merit_effect = { LIEGE = root VALUE = 2 }
+		remove_character_flag = rp_war_service_participant
+	}
+}
+
+rp_cleanup_merit_roster_effect = {
+	if = {
+		limit = { has_variable_list = rp_merit_roster }
+#tiger-ignore(block, key=strict-scopes)
+		every_in_list = {
+			list = rp_merit_roster
+			limit = {
+				has_variable = rp_merit_score
+				NOR = {
+					rp_is_valid_merit_subject_trigger = { LIEGE = root }
+				}
+			}
+			rp_clear_merit_effect = yes
+		}
+	}
+}
+
+rp_mark_campaign_incident_cooldown_effect = {
+	add_character_flag = {
+		flag = rp_campaign_incident_cooldown
+		days = $DAYS$
+	}
+}
+
+rp_mark_campaign_actor_used_effect = {
+	scope:rp_campaign_actor = {
+		add_character_flag = {
+			flag = rp_campaign_incident_recent_actor
+			days = 180
+		}
+	}
+}
+
+rp_select_campaign_incident_actor_effect = {
+	rp_collect_merit_candidates_effect = yes
+	ordered_in_list = {
+		list = rp_merit_candidates
+		limit = {
+			rp_is_campaign_incident_actor_trigger = { LIEGE = root }
+		}
+		order_by = { value = var:rp_merit_score }
+		save_scope_as = rp_campaign_actor
+	}
+}
+
+rp_select_high_merit_campaign_actor_effect = {
+	rp_collect_merit_candidates_effect = yes
+	ordered_in_list = {
+		list = rp_merit_candidates
+		limit = {
+			rp_is_high_merit_campaign_actor_trigger = { LIEGE = root VALUE = $VALUE$ }
+		}
+		order_by = { value = var:rp_merit_score }
+		save_scope_as = rp_campaign_actor
+	}
+}
+
+rp_find_flagged_campaign_actor_effect = {
+	rp_collect_merit_candidates_effect = yes
+	ordered_in_list = {
+		list = rp_merit_candidates
+		limit = {
+			has_character_flag = $FLAG$
+			rp_is_valid_merit_subject_trigger = { LIEGE = root }
+		}
+		order_by = { value = var:rp_merit_score }
+		save_scope_as = rp_campaign_actor
+	}
+}
+
+rp_apply_campaign_success_effect = {
+	scope:rp_campaign_actor = {
+		rp_add_merit_effect = { LIEGE = root VALUE = $VALUE$ }
+		add_opinion = {
+			target = root
+			modifier = rp_campaign_incident_grateful_opinion
+		}
+	}
+	add_prestige = $PRESTIGE$
+	rp_mark_campaign_actor_used_effect = yes
+}
+
+rp_apply_campaign_failure_effect = {
+	scope:rp_campaign_actor = {
+		rp_add_merit_effect = { LIEGE = root VALUE = $VALUE$ }
+		add_opinion = {
+			target = root
+			modifier = rp_campaign_incident_rebuked_opinion
+		}
+		add_character_modifier = {
+			modifier = rp_merit_resentful_modifier
+			years = 3
+		}
+		add_character_flag = rp_resentful_mark
+	}
+	add_prestige = $PRESTIGE$
+	rp_mark_campaign_actor_used_effect = yes
+}
+
+rp_apply_campaign_risk_effect = {
+	scope:rp_campaign_actor = {
+		add_opinion = {
+			target = root
+			modifier = rp_campaign_incident_risk_opinion
+		}
+		add_character_flag = {
+			flag = rp_campaign_incident_recent_actor
+			days = 180
+		}
+	}
+}

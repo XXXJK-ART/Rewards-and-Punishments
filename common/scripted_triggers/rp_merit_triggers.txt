@@ -1,0 +1,135 @@
+﻿rp_is_merit_system_enabled_trigger = {
+	is_ruler = yes
+	is_ai = no
+	highest_held_title_tier >= tier_county
+}
+
+rp_has_rewardable_merit_trigger = {
+	has_variable = rp_merit_score
+	var:rp_merit_score >= 30
+}
+
+rp_is_valid_merit_subject_trigger = {
+	is_alive = yes
+	has_variable = rp_merit_score
+	OR = {
+		var:rp_merit_score > 0
+		var:rp_merit_score < 0
+	}
+	NOT = { this = $LIEGE$ }
+	OR = {
+		is_vassal_or_below_of = $LIEGE$
+		is_courtier_of = $LIEGE$
+		is_knight_of = $LIEGE$
+	}
+	NOT = { is_at_war_with = $LIEGE$ }
+}
+
+rp_can_receive_merit_from_liege_trigger = {
+	is_alive = yes
+	NOT = { this = $LIEGE$ }
+	OR = {
+		is_vassal_or_below_of = $LIEGE$
+		is_courtier_of = $LIEGE$
+		is_knight_of = $LIEGE$
+	}
+	NOT = { is_at_war_with = $LIEGE$ }
+}
+
+rp_has_rewardable_merit_subject_trigger = {
+	OR = {
+		any_vassal_or_below = {
+			rp_is_valid_merit_subject_trigger = { LIEGE = root }
+			rp_has_rewardable_merit_trigger = yes
+			NOT = { has_character_flag = rp_petition_recently_handled }
+		}
+		any_courtier_or_guest = {
+			rp_is_valid_merit_subject_trigger = { LIEGE = root }
+			rp_has_rewardable_merit_trigger = yes
+			NOT = { has_character_flag = rp_petition_recently_handled }
+		}
+		any_knight = {
+			rp_is_valid_merit_subject_trigger = { LIEGE = root }
+			rp_has_rewardable_merit_trigger = yes
+			NOT = { has_character_flag = rp_petition_recently_handled }
+		}
+	}
+}
+
+rp_has_grantable_county_trigger = {
+	any_held_title = {
+		tier = tier_county
+		is_landless_type_title = no
+		NOT = { this = root.capital_county }
+		NOT = { this = root.primary_title }
+	}
+}
+
+rp_has_grantable_duchy_trigger = {
+	any_held_title = {
+		tier = tier_duchy
+		is_landless_type_title = no
+		NOT = { this = root.primary_title }
+	}
+}
+
+rp_has_creatable_duchy_from_county_trigger = {
+	gold >= 250
+	any_held_title = {
+		tier = tier_county
+		is_landless_type_title = no
+		de_jure_liege = {
+			tier = tier_duchy
+			is_title_created = no
+		}
+	}
+}
+
+rp_can_fire_campaign_incident_trigger = {
+	rp_is_merit_system_enabled_trigger = yes
+	is_at_war = yes
+	NOT = { has_character_flag = rp_campaign_incident_cooldown }
+	OR = {
+		any_vassal_or_below = {
+			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+			has_character_flag = rp_war_service_participant
+		}
+		any_courtier_or_guest = {
+			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+			has_character_flag = rp_war_service_participant
+		}
+		any_knight = {
+			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
+			has_character_flag = rp_war_service_participant
+		}
+	}
+}
+
+rp_is_campaign_incident_actor_trigger = {
+	rp_can_receive_merit_from_liege_trigger = { LIEGE = $LIEGE$ }
+	has_character_flag = rp_war_service_participant
+	NOT = { has_character_flag = rp_campaign_incident_recent_actor }
+}
+
+rp_is_high_merit_campaign_actor_trigger = {
+	rp_is_campaign_incident_actor_trigger = { LIEGE = $LIEGE$ }
+	has_variable = rp_merit_score
+	var:rp_merit_score >= $VALUE$
+}
+
+rp_has_another_high_merit_actor_trigger = {
+	OR = {
+		any_vassal_or_below = {
+			rp_is_high_merit_campaign_actor_trigger = { LIEGE = root VALUE = $VALUE$ }
+			NOT = { this = $ACTOR$ }
+		}
+		any_courtier_or_guest = {
+			rp_is_high_merit_campaign_actor_trigger = { LIEGE = root VALUE = $VALUE$ }
+			NOT = { this = $ACTOR$ }
+		}
+		any_knight = {
+			rp_is_high_merit_campaign_actor_trigger = { LIEGE = root VALUE = $VALUE$ }
+			NOT = { this = $ACTOR$ }
+		}
+	}
+}

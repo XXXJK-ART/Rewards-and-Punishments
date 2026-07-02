@@ -1,0 +1,285 @@
+﻿on_combat_end_winner = {
+	on_actions = {
+		rp_on_combat_end_winner
+		rp_on_combat_end_winner_campaign_incidents
+	}
+}
+
+rp_on_combat_end_winner = {
+	trigger = {
+		exists = combat.combat_war
+		OR = {
+			combat.combat_war = {
+				primary_attacker = { rp_is_merit_system_enabled_trigger = yes }
+			}
+			combat.combat_war = {
+				primary_defender = { rp_is_merit_system_enabled_trigger = yes }
+			}
+		}
+	}
+	events = {
+		rp_merit.0001
+	}
+}
+
+rp_on_combat_end_winner_campaign_incidents = {
+	trigger = {
+		exists = combat.combat_war
+		OR = {
+			combat.combat_war = {
+				primary_attacker = { rp_is_merit_system_enabled_trigger = yes }
+			}
+			combat.combat_war = {
+				primary_defender = { rp_is_merit_system_enabled_trigger = yes }
+			}
+		}
+	}
+	events = {
+		rp_merit.2000
+	}
+}
+
+on_combat_end_loser = {
+	on_actions = {
+		rp_on_combat_end_loser
+		rp_on_combat_end_loser_campaign_incidents
+	}
+}
+
+rp_on_combat_end_loser = {
+	trigger = {
+		exists = combat.combat_war
+		OR = {
+			combat.combat_war = {
+				primary_attacker = { rp_is_merit_system_enabled_trigger = yes }
+			}
+			combat.combat_war = {
+				primary_defender = { rp_is_merit_system_enabled_trigger = yes }
+			}
+		}
+	}
+	events = {
+		rp_merit.0003
+	}
+}
+
+rp_on_combat_end_loser_campaign_incidents = {
+	trigger = {
+		exists = combat.combat_war
+		OR = {
+			combat.combat_war = {
+				primary_attacker = { rp_is_merit_system_enabled_trigger = yes }
+			}
+			combat.combat_war = {
+				primary_defender = { rp_is_merit_system_enabled_trigger = yes }
+			}
+		}
+	}
+	events = {
+		rp_merit.2001
+	}
+}
+on_siege_completion = {
+	on_actions = {
+		rp_on_siege_completion
+		rp_on_siege_completion_campaign_incidents
+	}
+}
+
+rp_on_siege_completion = {
+	trigger = {
+		exists = root
+		exists = scope:war
+		root = { is_ruler = yes }
+		OR = {
+			scope:war = {
+				primary_attacker = {
+					rp_is_merit_system_enabled_trigger = yes
+					OR = {
+						this = root
+						this = root.top_liege
+					}
+				}
+			}
+			scope:war = {
+				primary_defender = {
+					rp_is_merit_system_enabled_trigger = yes
+					OR = {
+						this = root
+						this = root.top_liege
+					}
+				}
+			}
+		}
+	}
+	events = {
+		rp_merit.0002
+	}
+}
+
+rp_on_siege_completion_campaign_incidents = {
+	trigger = {
+		exists = root
+		exists = scope:war
+		root = { is_ruler = yes }
+		OR = {
+			scope:war = {
+				primary_attacker = {
+					rp_is_merit_system_enabled_trigger = yes
+					OR = {
+						this = root
+						this = root.top_liege
+					}
+				}
+			}
+			scope:war = {
+				primary_defender = {
+					rp_is_merit_system_enabled_trigger = yes
+					OR = {
+						this = root
+						this = root.top_liege
+					}
+				}
+			}
+		}
+	}
+	events = {
+		rp_merit.2002
+	}
+}
+
+on_war_won_attacker = {
+	on_actions = {
+		rp_on_war_won_attacker
+	}
+}
+
+rp_on_war_won_attacker = {
+	trigger = {
+		exists = scope:attacker
+		scope:attacker = { rp_is_merit_system_enabled_trigger = yes }
+	}
+	effect = {
+		scope:attacker = {
+			rp_war_end_service_merit_effect = yes
+			if = {
+				limit = { rp_has_rewardable_merit_subject_trigger = yes }
+				set_variable = { name = rp_petition_chain_count value = 0 }
+				trigger_event = {
+					id = rp_merit.1000
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+on_war_won_defender = {
+	on_actions = {
+		rp_on_war_won_defender
+	}
+}
+
+rp_on_war_won_defender = {
+	trigger = {
+		exists = scope:defender
+		scope:defender = { rp_is_merit_system_enabled_trigger = yes }
+	}
+	effect = {
+		scope:defender = {
+			rp_war_end_service_merit_effect = yes
+			if = {
+				limit = { rp_has_rewardable_merit_subject_trigger = yes }
+				set_variable = { name = rp_petition_chain_count value = 0 }
+				trigger_event = {
+					id = rp_merit.1000
+					days = 3
+				}
+			}
+		}
+	}
+}
+
+on_war_white_peace = {
+	on_actions = {
+		rp_on_war_white_peace
+	}
+}
+
+rp_on_war_white_peace = {
+	effect = {
+		scope:attacker = {
+			if = {
+				limit = { rp_is_merit_system_enabled_trigger = yes }
+				rp_war_end_service_merit_effect = yes
+			}
+		}
+		scope:defender = {
+			if = {
+				limit = { rp_is_merit_system_enabled_trigger = yes }
+				rp_war_end_service_merit_effect = yes
+			}
+		}
+	}
+}
+
+quarterly_playable_pulse = {
+	on_actions = {
+		rp_quarterly_merit_cleanup
+		rp_quarterly_campaign_incidents
+	}
+}
+
+rp_quarterly_merit_cleanup = {
+	trigger = {
+		root = { rp_is_merit_system_enabled_trigger = yes }
+	}
+	effect = {
+		root = { rp_cleanup_merit_roster_effect = yes }
+	}
+}
+
+rp_quarterly_campaign_incidents = {
+	trigger = {
+		root = {
+			rp_can_fire_campaign_incident_trigger = yes
+		}
+	}
+	effect = {
+		root = {
+			trigger_event = rp_merit.2003
+		}
+	}
+}
+
+on_death = {
+	on_actions = {
+		rp_on_death_clear_merit
+	}
+}
+
+rp_on_death_clear_merit = {
+	trigger = {
+		root = { has_variable = rp_merit_score }
+	}
+	effect = {
+		root = { rp_clear_merit_effect = yes }
+	}
+}
+
+on_leave_court = {
+	on_actions = {
+		rp_on_leave_court_clear_merit
+	}
+}
+
+rp_on_leave_court_clear_merit = {
+	trigger = {
+		root = { has_variable = rp_merit_score }
+		exists = scope:old_employer
+		root = { var:rp_merit_owner ?= scope:old_employer }
+	}
+	effect = {
+		root = { rp_clear_merit_effect = yes }
+	}
+}

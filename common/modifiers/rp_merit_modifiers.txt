@@ -1,0 +1,50 @@
+﻿rp_merit_resentful_modifier = {
+	diplomacy = -1
+	monthly_prestige = -0.2
+}
+
+rp_merit_noble_resistance_modifier = {
+	direct_vassal_opinion = -10
+}
+
+rp_merit_honored_modifier = {
+	monthly_prestige = 0.5
+	diplomacy = 1
+}
+
+rp_campaign_discipline_modifier = {
+	martial = 1
+	direct_vassal_opinion = 5
+}
+
+rp_campaign_disorder_modifier = {
+	martial = -1
+	direct_vassal_opinion = -5
+	monthly_prestige = -0.3
+}
+
+rp_campaign_vanguard_modifier = {
+	martial = 1
+	prowess = 2
+}
+
+rp_campaign_shamed_modifier = {
+	martial = -1
+	prowess = -1
+}
+
+rp_campaign_loyal_guard_modifier = {
+	prowess = 2
+	monthly_prestige = 0.2
+}
+
+rp_campaign_hunger_modifier = {
+	martial = -1
+	direct_vassal_opinion = -5
+	monthly_prestige = -0.2
+}
+
+rp_campaign_relief_modifier = {
+	direct_vassal_opinion = 5
+	monthly_prestige = 0.2
+}
