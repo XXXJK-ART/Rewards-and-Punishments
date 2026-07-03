@@ -5,6 +5,8 @@ rp_merit.2000 = {
 	hidden = yes
 
 	immediate = {
+		combat.combat_war = { save_scope_as = rp_current_war }
+
 		if = {
 			limit = {
 				combat.combat_war = {
@@ -307,6 +309,8 @@ rp_merit.2001 = {
 	hidden = yes
 
 	immediate = {
+		combat.combat_war = { save_scope_as = rp_current_war }
+
 		if = {
 			limit = {
 				combat.combat_war = {
@@ -466,6 +470,8 @@ rp_merit.2002 = {
 	hidden = yes
 
 	immediate = {
+		scope:war = { save_scope_as = rp_current_war }
+
 		if = {
 			limit = {
 				scope:war = {
@@ -715,15 +721,8 @@ rp_merit.2011 = {
 			modifier = rp_campaign_disorder_modifier
 			years = 2
 		}
-		scope:rp_campaign_actor = {
-			rp_add_merit_effect = { LIEGE = root VALUE = -30 }
-			add_character_modifier = {
-				modifier = rp_merit_resentful_modifier
-				years = 5
-			}
-			add_character_flag = rp_resentful_mark
-			remove_character_flag = rp_yang_zhen_resentment
-		}
+		scope:rp_campaign_actor = { remove_character_flag = rp_yang_zhen_resentment }
+		rp_apply_defection_effect = { WAR = scope:rp_current_war }
 	}
 }
 
@@ -1211,6 +1210,10 @@ rp_merit.2090 = {
 				modifier = rp_campaign_incident_rebuked_opinion
 			}
 			add_character_flag = rp_resentful_mark
+		}
+		random = {
+			chance = 35
+			rp_apply_defection_effect = { WAR = scope:rp_current_war }
 		}
 		rp_mark_campaign_actor_used_effect = yes
 	}
