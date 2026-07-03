@@ -8,7 +8,10 @@ rp_merit.3010 = {
 	desc = rp_merit.3010.desc
 	right_portrait = scope:rp_founding_actor
 
-	trigger = { exists = scope:rp_founding_actor }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = { rp_is_safe_founding_actor_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.3010.a
@@ -107,7 +110,10 @@ rp_merit.3013 = {
 	desc = rp_merit.3013.desc
 	right_portrait = scope:rp_founding_actor
 
-	trigger = { exists = scope:rp_founding_actor }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = { rp_is_safe_founding_actor_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.3013.a
@@ -204,7 +210,10 @@ rp_merit.3016 = {
 	desc = rp_merit.3016.desc
 	right_portrait = scope:rp_founding_actor
 
-	trigger = { exists = scope:rp_founding_actor }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = { rp_is_safe_founding_actor_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.3016.a
@@ -368,7 +377,10 @@ rp_merit.3051 = {
 	desc = rp_merit.3051.desc
 	right_portrait = scope:rp_founding_actor
 
-	trigger = { exists = scope:rp_founding_actor }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = { rp_is_safe_founding_actor_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.3051.a
@@ -398,6 +410,7 @@ rp_merit.3060 = {
 	trigger = {
 		exists = scope:rp_founding_actor
 		scope:rp_founding_actor = {
+			rp_is_safe_founding_actor_trigger = { LIEGE = root }
 			highest_held_title_tier >= tier_county
 			has_variable = rp_founding_seniority
 			var:rp_founding_seniority >= 30
@@ -429,7 +442,10 @@ rp_merit.3061 = {
 	desc = rp_merit.3061.desc
 	right_portrait = scope:rp_founding_actor
 
-	trigger = { exists = scope:rp_founding_actor }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = { rp_is_safe_founding_actor_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.3061.a
@@ -458,7 +474,10 @@ rp_merit.3070 = {
 
 	trigger = {
 		exists = scope:rp_founding_actor
-		scope:rp_founding_actor = { highest_held_title_tier >= tier_county }
+		scope:rp_founding_actor = {
+			rp_is_safe_founding_actor_trigger = { LIEGE = root }
+			highest_held_title_tier >= tier_county
+		}
 	}
 
 	option = {
@@ -486,7 +505,10 @@ rp_merit.3071 = {
 	desc = rp_merit.3071.desc
 	right_portrait = scope:rp_founding_actor
 
-	trigger = { exists = scope:rp_founding_actor }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = { rp_is_safe_founding_actor_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.3071.a
@@ -514,7 +536,10 @@ rp_merit.3080 = {
 
 	trigger = {
 		exists = scope:rp_founding_actor
-		scope:rp_founding_actor = { has_character_flag = rp_founding_follower }
+		scope:rp_founding_actor = {
+			rp_is_safe_founding_actor_trigger = { LIEGE = root }
+			has_character_flag = rp_founding_follower
+		}
 	}
 
 	option = {
@@ -543,7 +568,10 @@ rp_merit.3081 = {
 	desc = rp_merit.3081.desc
 	right_portrait = scope:rp_founding_actor
 
-	trigger = { exists = scope:rp_founding_actor }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = { rp_is_safe_founding_actor_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.3081.a
@@ -573,6 +601,7 @@ rp_merit.3090 = {
 	trigger = {
 		exists = scope:rp_founding_actor
 		scope:rp_founding_actor = {
+			rp_is_safe_founding_actor_trigger = { LIEGE = root }
 			OR = {
 				has_trait = humble
 				has_trait = content
@@ -611,7 +640,10 @@ rp_merit.3091 = {
 	desc = rp_merit.3091.desc
 	right_portrait = scope:rp_founding_actor
 
-	trigger = { exists = scope:rp_founding_actor }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = { rp_is_safe_founding_actor_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.3091.a
@@ -627,5 +659,234 @@ rp_merit.3091 = {
 		scope:rp_founding_actor = {
 			add_opinion = { target = root modifier = rp_founding_memory_opinion }
 		}
+	}
+}
+
+rp_merit.3110 = {
+	type = character_event
+	title = rp_merit.3110.t
+	theme = diplomacy
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.3110.desc
+	right_portrait = scope:rp_founding_descendant
+
+	immediate = { rp_select_founding_descendant_effect = yes }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = { rp_is_safe_founding_actor_trigger = { LIEGE = root } }
+		scope:rp_founding_actor = {
+			any_close_or_extended_family_member = {
+				is_alive = yes
+				NOT = { this = root }
+				NOT = { this = scope:rp_founding_actor }
+				OR = {
+					is_vassal_or_below_of = root
+					is_courtier_of = root
+					is_knight_of = root
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.3110.a
+		trigger = { exists = scope:rp_founding_descendant }
+		scope:rp_founding_descendant = {
+			add_character_modifier = { modifier = rp_merit_descendant_modifier years = 10 }
+			add_opinion = { target = root modifier = rp_founding_memory_opinion }
+		}
+		rp_mark_founding_story_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.3110.b
+		rp_mark_founding_story_used_effect = yes
+	}
+}
+
+rp_merit.3111 = {
+	type = character_event
+	title = rp_merit.3111.t
+	theme = learning
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.3111.desc
+	right_portrait = scope:rp_founding_descendant
+
+	immediate = { rp_select_founding_descendant_effect = yes }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = {
+			rp_is_safe_founding_actor_trigger = { LIEGE = root }
+			any_close_or_extended_family_member = {
+				is_alive = yes
+				NOT = { this = root }
+				OR = {
+					is_vassal_or_below_of = root
+					is_courtier_of = root
+					is_knight_of = root
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.3111.a
+		trigger = { exists = scope:rp_founding_descendant }
+		scope:rp_founding_descendant = {
+			add_prestige = 50
+			add_character_modifier = { modifier = rp_merit_descendant_modifier years = 8 }
+		}
+		rp_mark_founding_story_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.3111.b
+		trigger = { exists = scope:rp_founding_descendant }
+		scope:rp_founding_actor = {
+			add_opinion = { target = root modifier = rp_privilege_refused_opinion }
+		}
+		rp_mark_founding_story_used_effect = yes
+	}
+}
+
+rp_merit.3112 = {
+	type = character_event
+	title = rp_merit.3112.t
+	theme = martial
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.3112.desc
+	right_portrait = scope:rp_founding_descendant
+
+	immediate = { rp_select_founding_descendant_effect = yes }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = {
+			rp_is_safe_founding_actor_trigger = { LIEGE = root }
+			any_close_or_extended_family_member = {
+				is_alive = yes
+				NOT = { this = root }
+				OR = {
+					is_vassal_or_below_of = root
+					is_courtier_of = root
+					is_knight_of = root
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.3112.a
+		trigger = { exists = scope:rp_founding_descendant }
+		scope:rp_founding_descendant = {
+			rp_add_merit_effect = { LIEGE = root VALUE = 8 }
+			rp_mark_war_service_participant_effect = yes
+		}
+		rp_mark_founding_story_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.3112.b
+		trigger = { exists = scope:rp_founding_descendant }
+		scope:rp_founding_descendant = {
+			add_character_modifier = { modifier = rp_campaign_shamed_modifier years = 3 }
+		}
+		rp_mark_founding_story_used_effect = yes
+	}
+}
+
+rp_merit.3113 = {
+	type = character_event
+	title = rp_merit.3113.t
+	theme = diplomacy
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.3113.desc
+	right_portrait = scope:rp_founding_descendant
+
+	immediate = { rp_select_founding_descendant_effect = yes }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = {
+			rp_is_safe_founding_actor_trigger = { LIEGE = root }
+			any_close_or_extended_family_member = {
+				is_alive = yes
+				NOT = { this = root }
+				OR = {
+					is_vassal_or_below_of = root
+					is_courtier_of = root
+					is_knight_of = root
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.3113.a
+		trigger = {
+			exists = scope:rp_founding_descendant
+			gold >= 30
+		}
+		remove_short_term_gold = 30
+		scope:rp_founding_descendant = {
+			add_character_modifier = { modifier = rp_merit_descendant_modifier years = 10 }
+			add_opinion = { target = root modifier = rp_founding_memory_opinion }
+		}
+		rp_mark_founding_story_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.3113.b
+		trigger = { exists = scope:rp_founding_descendant }
+		scope:rp_founding_actor = {
+			add_opinion = { target = root modifier = rp_privilege_refused_opinion }
+		}
+		rp_mark_founding_story_used_effect = yes
+	}
+}
+
+rp_merit.3114 = {
+	type = character_event
+	title = rp_merit.3114.t
+	theme = intrigue
+	override_background = { reference = throne_room_east }
+	desc = rp_merit.3114.desc
+	right_portrait = scope:rp_founding_descendant
+
+	immediate = { rp_select_founding_descendant_effect = yes }
+	trigger = {
+		exists = scope:rp_founding_actor
+		scope:rp_founding_actor = {
+			rp_is_safe_founding_actor_trigger = { LIEGE = root }
+			any_close_or_extended_family_member = {
+				is_alive = yes
+				NOT = { this = root }
+				OR = {
+					is_vassal_or_below_of = root
+					is_courtier_of = root
+					is_knight_of = root
+				}
+			}
+		}
+	}
+
+	option = {
+		name = rp_merit.3114.a
+		trigger = { exists = scope:rp_founding_descendant }
+		scope:rp_founding_descendant = {
+			add_character_modifier = { modifier = rp_merit_descendant_modifier years = 6 }
+			add_prestige = 30
+		}
+		scope:rp_founding_actor = {
+			add_opinion = { target = root modifier = rp_founding_memory_opinion }
+		}
+		rp_mark_founding_story_used_effect = yes
+	}
+
+	option = {
+		name = rp_merit.3114.b
+		trigger = { exists = scope:rp_founding_descendant }
+		scope:rp_founding_descendant = {
+			add_opinion = { target = root modifier = rp_founding_unsettled_dispute_opinion }
+		}
+		rp_mark_founding_story_used_effect = yes
 	}
 }

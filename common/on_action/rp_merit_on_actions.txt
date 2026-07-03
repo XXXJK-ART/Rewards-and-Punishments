@@ -270,6 +270,7 @@ yearly_playable_pulse = {
 	on_actions = {
 		rp_yearly_founding_followers
 		rp_yearly_founding_stories
+		rp_yearly_power_overshadow_story
 	}
 }
 
@@ -291,6 +292,23 @@ rp_yearly_founding_stories = {
 	}
 	effect = {
 		root = { rp_founding_story_dispatch_effect = yes }
+	}
+}
+
+rp_yearly_power_overshadow_story = {
+	trigger = {
+		root = {
+			rp_is_merit_system_enabled_trigger = yes
+			NOT = { has_character_flag = rp_power_story_start_cooldown }
+		}
+	}
+	effect = {
+		root = {
+			random = {
+				chance = 35
+				rp_try_start_power_overshadow_story_effect = yes
+			}
+		}
 	}
 }
 
@@ -360,10 +378,18 @@ on_death = {
 
 rp_on_death_clear_merit = {
 	trigger = {
-		root = { has_variable = rp_merit_score }
+		root = {
+			OR = {
+				has_variable = rp_merit_score
+				has_character_modifier = rp_danshu_tiequan_modifier
+			}
+		}
 	}
 	effect = {
-		root = { rp_clear_merit_effect = yes }
+		root = {
+			rp_inherit_danshu_tiequan_effect = yes
+			rp_clear_merit_effect = yes
+		}
 	}
 }
 

@@ -50,6 +50,20 @@
 			value = -100
 		}
 	}
+	if = {
+		limit = {
+			var:rp_merit_score > 0
+			OR = {
+				NOT = { has_variable = rp_merit_peak_score }
+				var:rp_merit_score > var:rp_merit_peak_score
+			}
+		}
+		set_variable = {
+			name = rp_merit_peak_score
+			value = var:rp_merit_score
+		}
+	}
+	rp_update_founding_follower_status_effect = yes
 	rp_update_great_house_status_effect = yes
 }
 
@@ -79,6 +93,7 @@ rp_clear_merit_effect = {
 	remove_variable = rp_merit_battles
 	remove_variable = rp_merit_sieges
 	remove_variable = rp_merit_captures
+	remove_variable = rp_merit_peak_score
 	remove_variable = rp_merit_recent_major_gain
 	remove_variable = rp_merit_recent_major_loss
 	remove_variable = rp_merit_owner
@@ -88,6 +103,28 @@ rp_clear_merit_effect = {
 	remove_character_flag = rp_recent_battle_merit_credit
 	remove_character_flag = rp_war_service_participant
 	remove_character_modifier = rp_merit_resentful_modifier
+}
+
+rp_inherit_danshu_tiequan_effect = {
+	if = {
+		limit = {
+			has_character_modifier = rp_danshu_tiequan_modifier
+			exists = primary_heir
+			primary_heir = {
+				is_alive = yes
+				NOT = { is_at_war_with = root }
+			}
+		}
+		primary_heir = {
+			if = {
+				limit = { NOT = { has_character_modifier = rp_danshu_tiequan_modifier } }
+				add_character_modifier = {
+					modifier = rp_danshu_tiequan_modifier
+					years = 20
+				}
+			}
+		}
+	}
 }
 
 rp_mark_founding_follower_effect = {
@@ -126,24 +163,70 @@ rp_update_founding_follower_status_effect = {
 	if = {
 		limit = { has_character_flag = rp_founding_follower }
 		if = {
-			limit = { NOT = { has_trait = rp_founding_follower_trait } }
-			add_trait = rp_founding_follower_trait
-		}
-		if = {
 			limit = {
-				has_variable = rp_founding_seniority
-				var:rp_founding_seniority >= 30
-				NOT = { has_trait = rp_core_follower_trait }
+				OR = {
+					AND = {
+						has_variable = rp_founding_seniority
+						var:rp_founding_seniority >= 40
+					}
+					AND = {
+						has_variable = rp_merit_peak_score
+						var:rp_merit_peak_score >= 150
+					}
+				}
 			}
-			add_trait = rp_core_follower_trait
+			if = {
+				limit = { has_trait = rp_founding_follower_trait }
+				remove_trait = rp_founding_follower_trait
+			}
+			if = {
+				limit = { has_trait = rp_core_follower_trait }
+				remove_trait = rp_core_follower_trait
+			}
+			if = {
+				limit = { NOT = { has_trait = rp_pillar_follower_trait } }
+				add_trait = rp_pillar_follower_trait
+			}
 		}
-		if = {
+		else_if = {
 			limit = {
-				has_variable = rp_founding_seniority
-				var:rp_founding_seniority >= 60
-				NOT = { has_trait = rp_pillar_follower_trait }
+				OR = {
+					AND = {
+						has_variable = rp_founding_seniority
+						var:rp_founding_seniority >= 20
+					}
+					AND = {
+						has_variable = rp_merit_peak_score
+						var:rp_merit_peak_score >= 80
+					}
+				}
 			}
-			add_trait = rp_pillar_follower_trait
+			if = {
+				limit = { has_trait = rp_founding_follower_trait }
+				remove_trait = rp_founding_follower_trait
+			}
+			if = {
+				limit = { has_trait = rp_pillar_follower_trait }
+				remove_trait = rp_pillar_follower_trait
+			}
+			if = {
+				limit = { NOT = { has_trait = rp_core_follower_trait } }
+				add_trait = rp_core_follower_trait
+			}
+		}
+		else = {
+			if = {
+				limit = { has_trait = rp_core_follower_trait }
+				remove_trait = rp_core_follower_trait
+			}
+			if = {
+				limit = { has_trait = rp_pillar_follower_trait }
+				remove_trait = rp_pillar_follower_trait
+			}
+			if = {
+				limit = { NOT = { has_trait = rp_founding_follower_trait } }
+				add_trait = rp_founding_follower_trait
+			}
 		}
 		if = {
 			limit = { highest_held_title_tier >= tier_county }
@@ -313,10 +396,32 @@ rp_select_founding_story_actor_effect = {
 	}
 }
 
+rp_select_founding_descendant_effect = {
+	if = {
+		limit = { exists = scope:rp_founding_actor }
+		scope:rp_founding_actor = {
+			random_close_or_extended_family_member = {
+				limit = {
+					is_alive = yes
+					NOT = { this = root }
+					NOT = { this = scope:rp_founding_actor }
+					OR = {
+						is_vassal_or_below_of = root
+						is_courtier_of = root
+						is_knight_of = root
+					}
+					NOT = { is_at_war_with = root }
+				}
+				save_scope_as = rp_founding_descendant
+			}
+		}
+	}
+}
+
 rp_mark_founding_story_used_effect = {
 	add_character_flag = {
 		flag = rp_founding_story_cooldown
-		days = 240
+		days = 720
 	}
 	scope:rp_founding_actor = {
 		add_character_flag = {
@@ -384,7 +489,89 @@ rp_founding_story_dispatch_effect = {
 			6 = { trigger_event = rp_merit.3070 }
 			6 = { trigger_event = rp_merit.3080 }
 			6 = { trigger_event = rp_merit.3090 }
+			3 = { trigger_event = rp_merit.3110 }
+			3 = { trigger_event = rp_merit.3111 }
+			3 = { trigger_event = rp_merit.3112 }
+			3 = { trigger_event = rp_merit.3113 }
+			3 = { trigger_event = rp_merit.3114 }
 		}
+	}
+}
+
+rp_select_power_overshadow_hero_effect = {
+	ordered_vassal = {
+		limit = {
+			rp_is_power_overshadow_candidate_trigger = { LIEGE = root }
+			NOT = { has_character_flag = rp_power_story_recent_target }
+		}
+		order_by = { value = var:rp_merit_score }
+		save_scope_as = rp_power_hero_candidate
+	}
+}
+
+rp_try_start_power_overshadow_story_effect = {
+	if = {
+		limit = {
+			rp_is_merit_system_enabled_trigger = yes
+			NOT = { has_character_flag = rp_power_story_start_cooldown }
+			NOT = {
+				any_owned_story = {
+					story_type = rp_power_overshadow_story
+				}
+			}
+		}
+		rp_select_power_overshadow_hero_effect = yes
+		if = {
+			limit = { exists = scope:rp_power_hero_candidate }
+			set_variable = {
+				name = rp_power_story_target
+				value = scope:rp_power_hero_candidate
+			}
+			create_story = {
+				type = rp_power_overshadow_story
+				save_scope_as = rp_power_story
+			}
+			add_character_flag = {
+				flag = rp_power_story_start_cooldown
+				days = 3650
+			}
+			scope:rp_power_hero_candidate = {
+				add_character_flag = {
+					flag = rp_power_story_recent_target
+					days = 3650
+				}
+			}
+		}
+	}
+}
+
+rp_power_story_rebel_pressure_effect = {
+	scope:story.var:rp_power_hero = {
+		add_character_modifier = {
+			modifier = rp_power_rebel_pressure_modifier
+			years = 10
+		}
+		add_character_flag = rp_resentful_mark
+		add_opinion = {
+			target = root
+			modifier = rp_merit_refused_harsh_opinion
+		}
+		if = {
+			limit = {
+				can_create_faction = {
+					type = independence_faction
+					target = root
+				}
+			}
+			create_faction = {
+				type = independence_faction
+				target = root
+			}
+		}
+	}
+	add_character_modifier = {
+		modifier = rp_campaign_disorder_modifier
+		years = 3
 	}
 }
 
@@ -595,6 +782,10 @@ rp_mark_petition_handled_effect = {
 	else = {
 		remove_variable = rp_petition_chain_count
 	}
+	random = {
+		chance = 20
+		rp_try_start_power_overshadow_story_effect = yes
+	}
 }
 
 rp_grant_supporting_county_if_needed_effect = {
@@ -622,6 +813,67 @@ rp_grant_supporting_county_if_needed_effect = {
 			}
 		}
 		resolve_title_and_vassal_change = scope:rp_supporting_county_change
+	}
+}
+
+rp_grant_de_jure_county_for_reward_title_effect = {
+	if = {
+		limit = {
+			exists = scope:rp_petitioner
+			exists = $TITLE$
+			$TITLE$ = {
+				any_de_jure_county = {
+					holder = root
+					NOT = { this = root.capital_county }
+					NOT = { this = root.primary_title }
+				}
+			}
+		}
+		$TITLE$ = {
+			random_de_jure_county = {
+				limit = {
+					holder = root
+					NOT = { this = root.capital_county }
+					NOT = { this = root.primary_title }
+				}
+				change_title_holder = {
+					holder = scope:rp_petitioner
+					change = scope:rp_title_change
+					take_baronies = no
+				}
+			}
+		}
+	}
+}
+
+rp_correct_reward_government_effect = {
+	if = {
+		limit = {
+			exists = scope:rp_petitioner
+			scope:rp_petitioner = {
+				is_landed = yes
+				OR = {
+					has_government = republic_government
+					has_government = theocracy_government
+					has_government = mercenary_government
+					has_government = holy_order_government
+					has_government = landless_adventurer_government
+					has_government = nomad_government
+					has_government = herder_government
+				}
+			}
+		}
+		if = {
+			limit = { government_has_flag = government_is_clan }
+			scope:rp_petitioner = { change_government = clan_government }
+		}
+		else_if = {
+			limit = { government_has_flag = government_is_tribal }
+			scope:rp_petitioner = { change_government = tribal_government }
+		}
+		else = {
+			scope:rp_petitioner = { change_government = feudal_government }
+		}
 	}
 }
 
@@ -804,6 +1056,41 @@ rp_apply_defection_effect = {
 			remove_participant = scope:rp_campaign_actor
 			add_attacker = scope:rp_campaign_actor
 		}
+	}
+	if = {
+		limit = {
+			scope:rp_campaign_actor = {
+				is_landed = yes
+				is_vassal_of = root
+				can_create_faction = {
+					type = independence_faction
+					target = root
+				}
+			}
+		}
+		scope:rp_campaign_actor = {
+			create_faction = {
+				type = independence_faction
+				target = root
+			}
+			add_character_modifier = {
+				modifier = rp_power_rebel_pressure_modifier
+				years = 5
+			}
+		}
+	}
+	if = {
+		limit = {
+			scope:rp_campaign_actor = {
+				has_variable = rp_merit_peak_score
+				var:rp_merit_peak_score >= 100
+			}
+		}
+		add_character_modifier = {
+			modifier = rp_campaign_disorder_modifier
+			years = 5
+		}
+		add_dread = -10
 	}
 	rp_mark_campaign_actor_used_effect = yes
 }

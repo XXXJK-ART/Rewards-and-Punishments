@@ -9,6 +9,8 @@
 
 rp_founding_follower_trait = {
 	icon = gallant.dds
+	group = rp_founding_follower_group
+	level = 1
 	diplomacy = 1
 	martial = 1
 	same_opinion = 5
@@ -18,6 +20,8 @@ rp_founding_follower_trait = {
 
 rp_core_follower_trait = {
 	icon = overseer.dds
+	group = rp_founding_follower_group
+	level = 2
 	diplomacy = 1
 	martial = 1
 	monthly_prestige = 0.3
@@ -28,6 +32,8 @@ rp_core_follower_trait = {
 
 rp_pillar_follower_trait = {
 	icon = strategist.dds
+	group = rp_founding_follower_group
+	level = 3
 	diplomacy = 2
 	martial = 2
 	monthly_prestige = 0.6

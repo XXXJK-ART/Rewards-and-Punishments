@@ -889,7 +889,10 @@ rp_merit.2030 = {
 	desc = rp_merit.2030.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2030.a
@@ -941,7 +944,10 @@ rp_merit.2040 = {
 	desc = rp_merit.2040.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2040.a
@@ -994,7 +1000,10 @@ rp_merit.2050 = {
 	desc = rp_merit.2050.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2050.a
@@ -1050,7 +1059,10 @@ rp_merit.2060 = {
 	desc = rp_merit.2060.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2060.a
@@ -1110,7 +1122,10 @@ rp_merit.2070 = {
 	desc = rp_merit.2070.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2070.a
@@ -1171,7 +1186,10 @@ rp_merit.2090 = {
 	desc = rp_merit.2090.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2090.a
@@ -1231,7 +1249,10 @@ rp_merit.2080 = {
 	desc = rp_merit.2080.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2080.a
@@ -1288,7 +1309,10 @@ rp_merit.2095 = {
 	desc = rp_merit.2095.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2095.a
@@ -1341,7 +1365,10 @@ rp_merit.2100 = {
 	desc = rp_merit.2100.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2100.a
@@ -1381,7 +1408,10 @@ rp_merit.2101 = {
 	desc = rp_merit.2101.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2101.a
@@ -1418,7 +1448,10 @@ rp_merit.2102 = {
 	desc = rp_merit.2102.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2102.a
@@ -1465,7 +1498,10 @@ rp_merit.2103 = {
 	desc = rp_merit.2103.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2103.a
@@ -1502,7 +1538,10 @@ rp_merit.2104 = {
 	desc = rp_merit.2104.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2104.a
@@ -1540,7 +1579,10 @@ rp_merit.2105 = {
 	desc = rp_merit.2105.desc
 	right_portrait = scope:rp_campaign_actor
 
-	trigger = { exists = scope:rp_campaign_actor }
+	trigger = {
+		exists = scope:rp_campaign_actor
+		scope:rp_campaign_actor = { rp_can_receive_merit_from_liege_trigger = { LIEGE = root } }
+	}
 
 	option = {
 		name = rp_merit.2105.a

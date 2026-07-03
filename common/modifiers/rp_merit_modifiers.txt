@@ -117,3 +117,31 @@ rp_clan_grievance_modifier = {
 	diplomacy = -1
 	direct_vassal_opinion = -5
 }
+
+rp_merit_descendant_modifier = {
+	monthly_prestige = 0.2
+	diplomacy = 1
+}
+
+rp_power_under_suspicion_modifier = {
+	diplomacy = -1
+	martial = -1
+	monthly_prestige = -0.2
+}
+
+rp_power_stripped_modifier = {
+	martial = -2
+	prowess = -1
+	monthly_prestige = -0.4
+}
+
+rp_power_retired_modifier = {
+	monthly_prestige = 0.6
+	general_opinion = 5
+}
+
+rp_power_rebel_pressure_modifier = {
+	martial = 1
+	dread_gain_mult = 0.05
+	monthly_prestige = 0.4
+}

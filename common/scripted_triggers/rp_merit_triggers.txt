@@ -27,13 +27,13 @@ rp_can_request_merit_reward_trigger = {
 		AND = {
 			highest_held_title_tier < tier_county
 			has_variable = rp_founding_seniority
-			var:rp_founding_seniority >= 60
+			var:rp_founding_seniority >= 40
 			var:rp_merit_score >= 90
 		}
 		AND = {
 			highest_held_title_tier < tier_county
 			has_variable = rp_founding_seniority
-			var:rp_founding_seniority >= 30
+			var:rp_founding_seniority >= 20
 			var:rp_merit_score >= 60
 		}
 		AND = {
@@ -114,6 +114,17 @@ rp_can_receive_merit_from_liege_trigger = {
 	NOT = { is_at_war_with = $LIEGE$ }
 }
 
+rp_is_safe_founding_actor_trigger = {
+	is_alive = yes
+	NOT = { this = $LIEGE$ }
+	OR = {
+		is_vassal_or_below_of = $LIEGE$
+		is_courtier_of = $LIEGE$
+		is_knight_of = $LIEGE$
+	}
+	NOT = { is_at_war_with = $LIEGE$ }
+}
+
 rp_has_rewardable_merit_subject_trigger = {
 	OR = {
 		any_vassal_or_below = {
@@ -134,14 +145,6 @@ rp_has_rewardable_merit_subject_trigger = {
 	}
 }
 
-rp_has_grantable_barony_trigger = {
-	any_held_title = {
-		tier = tier_barony
-		is_landless_type_title = no
-		NOT = { this = root.primary_title }
-	}
-}
-
 rp_has_grantable_county_trigger = {
 	any_held_title = {
 		tier = tier_county
@@ -156,6 +159,12 @@ rp_has_grantable_duchy_trigger = {
 		tier = tier_duchy
 		is_landless_type_title = no
 		NOT = { this = root.primary_title }
+		NOT = { this = root.capital_county.de_jure_liege }
+		any_de_jure_county = {
+			holder = root
+			NOT = { this = root.capital_county }
+			NOT = { this = root.primary_title }
+		}
 	}
 }
 
@@ -165,6 +174,12 @@ rp_has_grantable_multiple_duchies_trigger = {
 		tier = tier_duchy
 		is_landless_type_title = no
 		NOT = { this = root.primary_title }
+		NOT = { this = root.capital_county.de_jure_liege }
+		any_de_jure_county = {
+			holder = root
+			NOT = { this = root.capital_county }
+			NOT = { this = root.primary_title }
+		}
 	}
 }
 
@@ -173,6 +188,12 @@ rp_has_grantable_kingdom_trigger = {
 		tier = tier_kingdom
 		is_landless_type_title = no
 		NOT = { this = root.primary_title }
+		NOT = { this = root.capital_county.de_jure_liege.de_jure_liege }
+		any_de_jure_county = {
+			holder = root
+			NOT = { this = root.capital_county }
+			NOT = { this = root.primary_title }
+		}
 	}
 }
 
@@ -182,6 +203,12 @@ rp_has_grantable_multiple_kingdoms_trigger = {
 		tier = tier_kingdom
 		is_landless_type_title = no
 		NOT = { this = root.primary_title }
+		NOT = { this = root.capital_county.de_jure_liege.de_jure_liege }
+		any_de_jure_county = {
+			holder = root
+			NOT = { this = root.capital_county }
+			NOT = { this = root.primary_title }
+		}
 	}
 }
 
@@ -190,6 +217,12 @@ rp_has_grantable_empire_trigger = {
 		tier = tier_empire
 		is_landless_type_title = no
 		NOT = { this = root.primary_title }
+		NOT = { this = root.capital_county.de_jure_liege.de_jure_liege.de_jure_liege }
+		any_de_jure_county = {
+			holder = root
+			NOT = { this = root.capital_county }
+			NOT = { this = root.primary_title }
+		}
 	}
 }
 
@@ -199,6 +232,12 @@ rp_has_grantable_multiple_empires_trigger = {
 		tier = tier_empire
 		is_landless_type_title = no
 		NOT = { this = root.primary_title }
+		NOT = { this = root.capital_county.de_jure_liege.de_jure_liege.de_jure_liege }
+		any_de_jure_county = {
+			holder = root
+			NOT = { this = root.capital_county }
+			NOT = { this = root.primary_title }
+		}
 	}
 }
 
@@ -207,9 +246,12 @@ rp_has_creatable_duchy_from_county_trigger = {
 	any_held_title = {
 		tier = tier_county
 		is_landless_type_title = no
+		NOT = { this = root.capital_county }
+		NOT = { this = root.primary_title }
 		de_jure_liege = {
 			tier = tier_duchy
 			is_title_created = no
+			NOT = { this = root.capital_county.de_jure_liege }
 		}
 	}
 }
@@ -251,6 +293,39 @@ rp_can_fire_minor_campaign_incident_trigger = {
 			rp_can_receive_merit_from_liege_trigger = { LIEGE = root }
 			has_character_flag = rp_war_service_participant
 		}
+	}
+}
+
+rp_is_power_overshadow_candidate_trigger = {
+	is_alive = yes
+	is_adult = yes
+	is_landed = yes
+	is_vassal_of = $LIEGE$
+	NOT = { is_close_family_of = $LIEGE$ }
+	NOT = { is_at_war_with = $LIEGE$ }
+	OR = {
+		AND = {
+			has_variable = rp_merit_score
+			var:rp_merit_score >= 80
+		}
+		AND = {
+			has_variable = rp_merit_peak_score
+			var:rp_merit_peak_score >= 120
+		}
+	}
+	OR = {
+		is_powerful_vassal = yes
+		highest_held_title_tier >= tier_duchy
+		martial >= 16
+		has_trait = ambitious
+		has_trait = arrogant
+	}
+}
+
+rp_power_story_hero_valid_trigger = {
+	exists = scope:story.var:rp_power_hero
+	scope:story.var:rp_power_hero = {
+		rp_is_power_overshadow_candidate_trigger = { LIEGE = scope:story.story_owner }
 	}
 }
 
