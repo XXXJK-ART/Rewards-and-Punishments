@@ -896,6 +896,7 @@ rp_merit.2030 = {
 		add_prestige = 80
 		scope:rp_campaign_actor = {
 			rp_add_merit_effect = { LIEGE = root VALUE = 15 }
+			rp_add_founding_seniority_effect = { VALUE = 5 }
 			add_opinion = {
 				target = root
 				modifier = rp_campaign_incident_grateful_opinion
@@ -1017,6 +1018,7 @@ rp_merit.2050 = {
 		}
 		scope:rp_campaign_actor = {
 			rp_add_merit_effect = { LIEGE = root VALUE = 12 }
+			rp_add_founding_seniority_effect = { VALUE = 4 }
 			add_opinion = {
 				target = root
 				modifier = rp_campaign_incident_grateful_opinion
@@ -1055,6 +1057,7 @@ rp_merit.2060 = {
 		add_prestige = 50
 		scope:rp_campaign_actor = {
 			rp_add_merit_effect = { LIEGE = root VALUE = 20 }
+			rp_add_founding_seniority_effect = { VALUE = 10 }
 			add_character_modifier = {
 				modifier = rp_campaign_loyal_guard_modifier
 				years = 5
@@ -1076,6 +1079,7 @@ rp_merit.2060 = {
 		}
 		scope:rp_campaign_actor = {
 			rp_add_merit_effect = { LIEGE = root VALUE = 10 }
+			rp_add_founding_seniority_effect = { VALUE = 5 }
 			add_opinion = {
 				target = root
 				modifier = rp_campaign_incident_grateful_opinion
@@ -1291,6 +1295,7 @@ rp_merit.2095 = {
 		add_prestige = 100
 		scope:rp_campaign_actor = {
 			rp_add_merit_effect = { LIEGE = root VALUE = 15 }
+			rp_add_founding_seniority_effect = { VALUE = 5 }
 			add_opinion = {
 				target = root
 				modifier = rp_campaign_incident_grateful_opinion
@@ -1318,6 +1323,7 @@ rp_merit.2095 = {
 		add_prestige = 50
 		scope:rp_campaign_actor = {
 			rp_add_merit_effect = { LIEGE = root VALUE = 8 }
+			rp_add_founding_seniority_effect = { VALUE = 3 }
 			add_opinion = {
 				target = root
 				modifier = rp_campaign_incident_risk_opinion
@@ -1541,6 +1547,7 @@ rp_merit.2105 = {
 		add_prestige = 15
 		scope:rp_campaign_actor = {
 			rp_add_merit_effect = { LIEGE = root VALUE = 7 }
+			rp_add_founding_seniority_effect = { VALUE = 3 }
 			add_opinion = {
 				target = root
 				modifier = rp_campaign_incident_grateful_opinion

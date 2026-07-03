@@ -12,13 +12,54 @@ rp_has_rewardable_merit_trigger = {
 rp_can_request_merit_reward_trigger = {
 	rp_has_rewardable_merit_trigger = yes
 	OR = {
-		NOR = {
-			is_powerful_vassal = yes
-			has_trait = ambitious
-			has_trait = greedy
-			has_trait = arrogant
+		AND = {
+			highest_held_title_tier >= tier_kingdom
+			var:rp_merit_score >= 120
 		}
-		var:rp_merit_score >= 60
+		AND = {
+			highest_held_title_tier = tier_duchy
+			var:rp_merit_score >= 90
+		}
+		AND = {
+			highest_held_title_tier = tier_county
+			var:rp_merit_score >= 60
+		}
+		AND = {
+			highest_held_title_tier < tier_county
+			has_variable = rp_founding_seniority
+			var:rp_founding_seniority >= 60
+			var:rp_merit_score >= 90
+		}
+		AND = {
+			highest_held_title_tier < tier_county
+			has_variable = rp_founding_seniority
+			var:rp_founding_seniority >= 30
+			var:rp_merit_score >= 60
+		}
+		AND = {
+			highest_held_title_tier < tier_county
+			NOR = {
+				is_powerful_vassal = yes
+				has_trait = ambitious
+				has_trait = greedy
+				has_trait = arrogant
+			}
+			OR = {
+				NOT = { has_variable = rp_founding_seniority }
+				var:rp_founding_seniority < 30
+			}
+			var:rp_merit_score >= 30
+		}
+		AND = {
+			highest_held_title_tier < tier_county
+			OR = {
+				is_powerful_vassal = yes
+				has_trait = ambitious
+				has_trait = greedy
+				has_trait = arrogant
+			}
+			var:rp_merit_score >= 60
+		}
 	}
 }
 
@@ -30,6 +71,12 @@ rp_is_great_house_trigger = {
 		AND = {
 			has_variable = rp_merit_score
 			var:rp_merit_score >= 100
+		}
+		AND = {
+			has_character_flag = rp_founding_follower
+			highest_held_title_tier >= tier_county
+			has_variable = rp_founding_seniority
+			var:rp_founding_seniority >= 30
 		}
 		house = {
 			any_house_member = {

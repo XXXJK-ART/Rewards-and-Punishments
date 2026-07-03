@@ -90,6 +90,304 @@ rp_clear_merit_effect = {
 	remove_character_modifier = rp_merit_resentful_modifier
 }
 
+rp_mark_founding_follower_effect = {
+	if = {
+		limit = { NOT = { has_character_flag = rp_founding_follower } }
+		add_character_flag = rp_founding_follower
+		if = {
+			limit = { NOT = { has_variable = rp_founding_seniority } }
+			set_variable = { name = rp_founding_seniority value = 0 }
+		}
+		if = {
+			limit = { exists = $LIEGE$ }
+			set_variable = { name = rp_founding_liege value = $LIEGE$ }
+			rp_add_merit_effect = { LIEGE = $LIEGE$ VALUE = $INITIAL_MERIT$ }
+		}
+		if = {
+			limit = { NOT = { has_trait = rp_founding_follower_trait } }
+			add_trait = rp_founding_follower_trait
+		}
+	}
+}
+
+rp_add_founding_seniority_effect = {
+	if = {
+		limit = { has_character_flag = rp_founding_follower }
+		if = {
+			limit = { NOT = { has_variable = rp_founding_seniority } }
+			set_variable = { name = rp_founding_seniority value = 0 }
+		}
+		change_variable = { name = rp_founding_seniority add = $VALUE$ }
+		rp_update_founding_follower_status_effect = yes
+	}
+}
+
+rp_update_founding_follower_status_effect = {
+	if = {
+		limit = { has_character_flag = rp_founding_follower }
+		if = {
+			limit = { NOT = { has_trait = rp_founding_follower_trait } }
+			add_trait = rp_founding_follower_trait
+		}
+		if = {
+			limit = {
+				has_variable = rp_founding_seniority
+				var:rp_founding_seniority >= 30
+				NOT = { has_trait = rp_core_follower_trait }
+			}
+			add_trait = rp_core_follower_trait
+		}
+		if = {
+			limit = {
+				has_variable = rp_founding_seniority
+				var:rp_founding_seniority >= 60
+				NOT = { has_trait = rp_pillar_follower_trait }
+			}
+			add_trait = rp_pillar_follower_trait
+		}
+		if = {
+			limit = { highest_held_title_tier >= tier_county }
+			rp_establish_founding_house_effect = yes
+		}
+	}
+}
+
+rp_establish_founding_house_effect = {
+	if = {
+		limit = {
+			has_character_flag = rp_founding_follower
+			NOT = { has_character_flag = rp_founding_house_established }
+		}
+		add_character_flag = rp_founding_house_established
+		add_character_modifier = {
+			modifier = rp_founding_house_modifier
+			years = 100
+		}
+		dynasty = {
+			add_dynasty_modifier = {
+				modifier = rp_founding_dynasty_modifier
+				years = 100
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_character_flag = rp_founding_follower
+			highest_held_title_tier >= tier_county
+			OR = {
+				highest_held_title_tier >= tier_duchy
+				AND = {
+					has_variable = rp_founding_seniority
+					var:rp_founding_seniority >= 30
+				}
+			}
+			NOT = { has_character_flag = rp_great_house_mark }
+		}
+		add_character_flag = rp_great_house_mark
+		add_character_modifier = {
+			modifier = rp_great_house_modifier
+			years = 100
+		}
+	}
+}
+
+rp_record_founding_followers_effect = {
+	add_character_flag = rp_recorded_founding_followers
+	every_courtier_or_guest = {
+		limit = {
+			is_adult = yes
+			NOT = { is_landed = yes }
+			NOT = { has_character_flag = rp_founding_follower }
+		}
+		rp_mark_founding_follower_effect = { LIEGE = root INITIAL_MERIT = 5 }
+	}
+	every_knight = {
+		limit = {
+			is_adult = yes
+			NOT = { has_character_flag = rp_founding_follower }
+		}
+		rp_mark_founding_follower_effect = { LIEGE = root INITIAL_MERIT = 8 }
+	}
+	every_vassal_or_below = {
+		limit = {
+			is_adult = yes
+			highest_held_title_tier <= tier_county
+			NOT = { has_character_flag = rp_founding_follower }
+		}
+		rp_mark_founding_follower_effect = { LIEGE = root INITIAL_MERIT = 5 }
+	}
+}
+
+rp_collect_founding_followers_effect = {
+	if = {
+		limit = { has_variable_list = rp_merit_roster }
+#tiger-ignore(block, key=strict-scopes)
+		every_in_list = {
+			list = rp_merit_roster
+			limit = {
+				has_character_flag = rp_founding_follower
+				NOT = { is_in_list = rp_founding_update_candidates }
+			}
+			add_to_list = rp_founding_update_candidates
+		}
+	}
+	every_vassal_or_below = {
+		limit = {
+			has_character_flag = rp_founding_follower
+			NOT = { is_in_list = rp_founding_update_candidates }
+		}
+		add_to_list = rp_founding_update_candidates
+	}
+	every_courtier_or_guest = {
+		limit = {
+			has_character_flag = rp_founding_follower
+			NOT = { is_in_list = rp_founding_update_candidates }
+		}
+		add_to_list = rp_founding_update_candidates
+	}
+	every_knight = {
+		limit = {
+			has_character_flag = rp_founding_follower
+			NOT = { is_in_list = rp_founding_update_candidates }
+		}
+		add_to_list = rp_founding_update_candidates
+	}
+}
+
+rp_yearly_founding_followers_effect = {
+	if = {
+		limit = {
+			highest_held_title_tier <= tier_duchy
+			NOT = { has_character_flag = rp_recorded_founding_followers }
+		}
+		rp_record_founding_followers_effect = yes
+	}
+	rp_collect_founding_followers_effect = yes
+#tiger-ignore(block, key=strict-scopes)
+	every_in_list = {
+		list = rp_founding_update_candidates
+		limit = {
+			is_alive = yes
+			has_character_flag = rp_founding_follower
+			OR = {
+				is_vassal_or_below_of = root
+				is_courtier_of = root
+				is_knight_of = root
+			}
+			OR = {
+				NOT = { has_variable = rp_founding_liege }
+				var:rp_founding_liege ?= root
+			}
+			NOT = { is_at_war_with = root }
+		}
+		set_variable = { name = rp_founding_liege value = root }
+		rp_add_founding_seniority_effect = { VALUE = 1 }
+	}
+}
+
+rp_select_founding_story_actor_effect = {
+	rp_collect_founding_followers_effect = yes
+#tiger-ignore(block, key=strict-scopes)
+	ordered_in_list = {
+		list = rp_founding_update_candidates
+		limit = {
+			is_alive = yes
+			NOT = { this = root }
+			NOT = { has_character_flag = rp_founding_story_recent_actor }
+			OR = {
+				is_vassal_or_below_of = root
+				is_courtier_of = root
+				is_knight_of = root
+			}
+			OR = {
+				has_character_flag = rp_founding_follower
+				AND = {
+					has_variable = rp_merit_score
+					var:rp_merit_score >= 30
+				}
+			}
+			NOT = { is_at_war_with = root }
+		}
+		order_by = { value = var:rp_merit_score }
+		save_scope_as = rp_founding_actor
+	}
+}
+
+rp_mark_founding_story_used_effect = {
+	add_character_flag = {
+		flag = rp_founding_story_cooldown
+		days = 240
+	}
+	scope:rp_founding_actor = {
+		add_character_flag = {
+			flag = rp_founding_story_recent_actor
+			days = 730
+		}
+	}
+}
+
+rp_apply_privilege_contract_effect = {
+	scope:rp_founding_actor = {
+		if = {
+			limit = {
+				is_vassal_of = root
+				vassal_contract_has_modifiable_obligations = yes
+			}
+			if = {
+				limit = { highest_held_title_tier >= tier_county }
+				vassal_contract_set_obligation_level = {
+					type = title_revocation_rights
+					level = title_revocation_rights_protected
+				}
+			}
+			if = {
+				limit = {
+					highest_held_title_tier >= tier_duchy
+					has_variable = rp_founding_seniority
+					var:rp_founding_seniority >= 30
+				}
+				vassal_contract_set_obligation_level = {
+					type = council_rights
+					level = council_rights_guaranteed
+				}
+			}
+		}
+		add_character_modifier = {
+			modifier = rp_danshu_tiequan_modifier
+			years = 25
+		}
+		add_opinion = {
+			target = root
+			modifier = rp_privilege_granted_opinion
+		}
+		rp_consume_merit_effect = { VALUE = 60 }
+	}
+}
+
+rp_founding_story_dispatch_effect = {
+	rp_select_founding_story_actor_effect = yes
+	if = {
+		limit = { exists = scope:rp_founding_actor }
+		random_list = {
+			10 = { trigger_event = rp_merit.3010 }
+			10 = { trigger_event = rp_merit.3011 }
+			10 = { trigger_event = rp_merit.3012 }
+			10 = { trigger_event = rp_merit.3013 }
+			10 = { trigger_event = rp_merit.3014 }
+			10 = { trigger_event = rp_merit.3015 }
+			10 = { trigger_event = rp_merit.3016 }
+			10 = { trigger_event = rp_merit.3017 }
+			10 = { trigger_event = rp_merit.3018 }
+			10 = { trigger_event = rp_merit.3019 }
+			6 = { trigger_event = rp_merit.3050 }
+			6 = { trigger_event = rp_merit.3060 }
+			6 = { trigger_event = rp_merit.3070 }
+			6 = { trigger_event = rp_merit.3080 }
+			6 = { trigger_event = rp_merit.3090 }
+		}
+	}
+}
+
 rp_record_battle_stat_effect = {
 	if = {
 		limit = { NOT = { has_variable = rp_merit_battles } }
@@ -278,6 +576,7 @@ rp_mark_petition_handled_effect = {
 			flag = rp_petition_recently_handled
 			days = 365
 		}
+		rp_update_founding_follower_status_effect = yes
 	}
 	change_variable = {
 		name = rp_petition_chain_count
@@ -426,6 +725,7 @@ rp_find_flagged_campaign_actor_effect = {
 rp_apply_campaign_success_effect = {
 	scope:rp_campaign_actor = {
 		rp_add_merit_effect = { LIEGE = root VALUE = $VALUE$ }
+		rp_add_founding_seniority_effect = { VALUE = 2 }
 		add_opinion = {
 			target = root
 			modifier = rp_campaign_incident_grateful_opinion
@@ -438,6 +738,7 @@ rp_apply_campaign_success_effect = {
 rp_apply_campaign_failure_effect = {
 	scope:rp_campaign_actor = {
 		rp_add_merit_effect = { LIEGE = root VALUE = $VALUE$ }
+		rp_add_founding_seniority_effect = { VALUE = 1 }
 		add_opinion = {
 			target = root
 			modifier = rp_campaign_incident_rebuked_opinion

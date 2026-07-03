@@ -266,6 +266,70 @@ quarterly_playable_pulse = {
 	}
 }
 
+yearly_playable_pulse = {
+	on_actions = {
+		rp_yearly_founding_followers
+		rp_yearly_founding_stories
+	}
+}
+
+rp_yearly_founding_followers = {
+	trigger = {
+		root = { rp_is_merit_system_enabled_trigger = yes }
+	}
+	effect = {
+		root = { rp_yearly_founding_followers_effect = yes }
+	}
+}
+
+rp_yearly_founding_stories = {
+	trigger = {
+		root = {
+			rp_is_merit_system_enabled_trigger = yes
+			NOT = { has_character_flag = rp_founding_story_cooldown }
+		}
+	}
+	effect = {
+		root = { rp_founding_story_dispatch_effect = yes }
+	}
+}
+
+on_title_gain = {
+	on_actions = {
+		rp_on_title_gain_founding_followers
+	}
+}
+
+rp_on_title_gain_founding_followers = {
+	trigger = {
+		root = {
+			is_ruler = yes
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				root = {
+					rp_is_merit_system_enabled_trigger = yes
+					highest_held_title_tier <= tier_duchy
+					NOT = { has_character_flag = rp_recorded_founding_followers }
+				}
+				scope:title.tier >= tier_duchy
+			}
+			root = { rp_record_founding_followers_effect = yes }
+		}
+		root = {
+			if = {
+				limit = {
+					has_character_flag = rp_founding_follower
+					scope:title.tier >= tier_county
+				}
+				rp_establish_founding_house_effect = yes
+			}
+		}
+	}
+}
+
 rp_quarterly_merit_cleanup = {
 	trigger = {
 		root = { rp_is_merit_system_enabled_trigger = yes }

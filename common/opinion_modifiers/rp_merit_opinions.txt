@@ -77,3 +77,28 @@ rp_campaign_life_saved_opinion = {
 	opinion = 50
 	years = 15
 }
+
+rp_privilege_granted_opinion = {
+	opinion = 35
+	years = 20
+}
+
+rp_privilege_refused_opinion = {
+	opinion = -30
+	years = 12
+}
+
+rp_founding_memory_opinion = {
+	opinion = 20
+	years = 10
+}
+
+rp_founding_settled_dispute_opinion = {
+	opinion = 15
+	years = 8
+}
+
+rp_founding_unsettled_dispute_opinion = {
+	opinion = -20
+	years = 8
+}
